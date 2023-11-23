@@ -1,0 +1,18 @@
+import numpy as np
+
+arr1 = np.array([[1, 2, 3], [4, 5, 6]])
+print('第1个数组arr1：\n', arr1)
+arr2 = np.array([['a', 8, 9], ['b', 11, 12]])
+print('第2个数组arr2：\n', arr2)
+print('沿轴0连接两个数组：')
+print(np.concatenate((arr1, arr2)))
+print('沿轴1连接两个数组：')
+print(np.concatenate((arr1, arr2), axis=1))
+print('沿轴0堆叠两个数组：')
+print(np.stack((arr1, arr2), 0))
+print('沿轴1堆叠两个数组：')
+print(np.stack((arr1, arr2), 1))
+print('水平堆叠：')
+print(np.hstack((arr1, arr2)))
+print('竖直堆叠：')
+print(np.vstack((arr1, arr2)))

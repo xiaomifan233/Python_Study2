@@ -1,0 +1,16 @@
+import numpy as np
+arr = np.arange(10)
+arr_a = np.sqrt(arr)
+print ('求平方根',arr_a)
+print('数组与标量相加')
+print(np.add(arr,2))
+print ('使用modf函数把浮点数分解成整数和小数部分')
+arr_f = arr_a * 3
+print (np.modf(arr_f))
+print ('数组比较')
+print(arr_f,arr)
+print(np.maximum(arr_f,arr))
+arr_a = np.arange(6).reshape(2,3)
+arr_b = np.arange(3)
+print('计算数组失量积',np.dot(arr_a,arr_b))
+print('计算数组数量积',arr_a*arr_b)

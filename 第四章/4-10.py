@@ -1,0 +1,18 @@
+import numpy as np
+
+arr = np.arange(12).reshape(3, 4)
+print('原数组：\n', arr)
+print('转置数组：')
+print(np.transpose(arr))
+print('转置数组：')
+print(arr.T)
+arr = np.arange(8).reshape(2, 2, 2)
+print('原数组：\n', arr)
+print('调用rollaxis函数：')
+print(np.rollaxis(arr, 2))
+print('调用rollaxis函数：')
+print(np.rollaxis(arr, 2, 1))
+arr = np.arange(8).reshape(2, 2, 2)
+print('原数组：\n', arr)
+print('调用swapaxes函数：')
+print(np.swapaxes(arr, 2, 0))
