@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-Emp_data = np.loadtxt('Employedpopulation.csv', delimiter=",", usecols=(1), dtype=int)
+Emp_data = np.loadtxt('Employedpopulation.csv', delimiter=",", usecols=(1), dtype=float)
 
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False

@@ -10,11 +10,11 @@ plt.rcParams['axes.unicode_minus']=False     # 正常显示负号
 #创建一个绘图对象, 并设置对象的宽度和高度
 plt.figure(figsize=(6, 4))
 #绘制全部就业人员拆线图
-line1 = plt.plot(Emp_data[0],Emp_data[1],"r-")
+line1, = plt.plot(Emp_data[0],Emp_data[1],"r-")
 #绘制城镇就业人员拆线图
-line2 = plt.plot(Emp_data[0],Emp_data[2],"g--")
+line2, = plt.plot(Emp_data[0],Emp_data[2],"g--")
 #绘制乡村就业人员拆线图
-line3 = plt.plot(Emp_data[0],Emp_data[3],"b-.")
+line3, = plt.plot(Emp_data[0],Emp_data[3],"b-.")
 
 plt.xlabel('年份')
 plt.ylabel('人员(万人)')
